@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My Resume</title>
+    <!-- 最新編譯和最佳化的 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <script src="https://unpkg.com/jquery@3.1.0/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/remarkable@1.7.1/dist/remarkable.min.js"></script>
+    <style type="text/css">
+    p {
+        font-size: 18px;
+        font-family: '微軟正黑體';
+    }
+    h3{
+    	font-family: '微軟正黑體';
+    }
+    
+    span {
+        color: white;
+        margin-right: 7px;
+    }
+    
+    #avatar {
+        width: 180px;
+        height: 180px;
+        float: left;
+    }
+    
+    #education {
+        margin-left: 30px;
+    }
+    
+    .introdiv {
+        float: left;
+        font-family: '微軟正黑體';
+        text-indent: 10px;
+        color: white;
+    }
+    
+    .introduce {
+        padding: 20px;
+        background-color: #4cbdf7;
+        min-height: 220px;
+        /*min-width: 768px;*/
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="background-color: #93de65">
+        <div class="introduce container-fluid">
+            <img id='avatar' src="pic/avatar.jpg">
+            <h1 style="text-indent: 10px;font-family: '微軟正黑體';color: white;">姚乃文</h1>
+            <div id="introLable" class="introdiv">
+                <p><span class="glyphicon glyphicon-user"></span>男性</p>
+                <p><span class="glyphicon glyphicon-envelope"></span>tsub1994@gmail.com</p>
+                <p><span class="glyphicon glyphicon-earphone"></span>0937-457-376</p>
+            </div>
+            <div id="education" class="introdiv">
+                <h3>學歷</h3>
+                <p>2013-2017.06 銘傳大學 資管系</p>
+            </div>
+        </div>
+        <div id="profile" style="max-width: 480px;">
+            <h3>簡介</h3>
+            <p>我是銘傳資管大四的學生， 在code世界裡發現屬於自己的一片天， 嚮往能夠在充滿挑戰的環境下工作， 因此，選擇新創實習開始我的 hello world。</p>
+            <div>我認為想要確認自己是否適合新創公司，最好的方式就是去新創公司實習。</div>
+        </div>
+    </div>
+</body>
+
+</html>
