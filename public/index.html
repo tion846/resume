@@ -20,7 +20,7 @@
         font-family: '微軟正黑體';
     }
     
-    span {
+    .glyphicon {
         color: white;
         margin-right: 7px;
     }
@@ -46,10 +46,6 @@
         /*background-color: #4cbdf7;*/
         background-color: #adabac;
         margin-top: 20px;
-    }
-    
-    #content {
-        padding: 0 20% 0 20%;
     }
     
     .introduce {
@@ -78,9 +74,28 @@
         padding-top: 16px;
         font-size: 1.5em;
     }
-    .light{
-    	/*color: #4cbdf7;*/
-    	color:#fc9e18;
+    
+    .light {
+        /*color: #4cbdf7;*/
+        color: #fc9e18;
+    }
+    /* 超小螢幕設備（手機，小於 768px） */
+    /* 沒有媒體查詢，因為這在 Bootstrap 3 是預設的。 */
+    /* 小螢幕設備（平板，768px（含）以上） */
+    
+    @media (min-width: 768px) {
+        .content {
+            padding: 0 5% 20px 5%;
+            /*background-color: gray;*/
+        }
+    }
+    /* 中螢幕設備（一般桌面，992px（含）以上） */
+    
+    @media (min-width: 992px) {
+        .content {
+            padding: 0 20% 20px 20%;
+            /*background-color: black;*/
+        }
     }
     </style>
 </head>
@@ -93,7 +108,7 @@
             </div>
             <div class="introdiv col-md-5 col-xs-7">
                 <h1 style="text-indent: 10px;font-family: '微軟正黑體';color: white;">姚乃文
-                <span style="font-family: 'Time new roman'">Nai Wen Yao</span></h1>
+                <span style="font-family: 'Time new roman'">Yao,Nai-wen</span></h1>
                 <p><span class="glyphicon glyphicon-user"></span>男性</p>
                 <p><span class="glyphicon glyphicon-envelope"></span>tsub1994@gmail.com</p>
                 <p><span class="glyphicon glyphicon-earphone"></span>0937-457-376</p>
@@ -102,7 +117,8 @@
                 <p>2013-2017.06 銘傳大學 資管系</p>
             </div>
         </div>
-        <div class="container-fluid" id="content" style="background-color: white;">
+
+        <div class="container-fluid content" id="" style="background-color: white">
             <h2>簡介</h2>
             <p class="light">我認為：「想要確認自己是否適合新創公司，最好的方式就是去新創公司實習。」</p>
             <p>
@@ -149,7 +165,7 @@
                 <li>第21屆全國大專校院資訊應用服務創新競賽(決賽)</li>
                 <li>銘傳資管系專研(優等)</li>
             </ul>
-            <p>參加比賽是一種認識自己的方式，見識過別人的強大，才會了解到自己的不足，透過比賽不斷磨練自我，回想起最初參賽的東西，不禁感覺到羞愧。</p>
+            <p>參加比賽是一種認識自己的方式，見識過別人的強大，才會了解到自己的不足，透過比賽不斷磨練自我，回想起最初參賽的東西，不禁感覺到不足。</p>
             <hr>
             <h2>成果與作品</h2>
             <div>
@@ -163,23 +179,34 @@
             <h2>補充問題</h2>
             <ul>
                 <li><b>為什麼是這個產業？為什麼是這間公司？</b></li>
-                <p>學習程式的過程中，發現許多不同的程式語言，尤其在網頁開發這個技術隨時都在改變的領域，需要不斷的思考與學習，而且可以透過不同的框架或不同的函式庫來實現相同的功能，沒有所謂的標準答案，這一點讓我為之著迷。</p>
-                <p>首先，速速建站所處的地點非常優越，同時，速速建站團隊擁有優秀的設計能力和開發技術，我相信參與團隊工作絕對會有超越我想像的收穫，不論是技術還是設計方面，抑或是融入職場環境，對我來說都有莫大的幫助，當然最重要的是能夠訓練獨立解決問題的能力。再者，學習的過程接觸過一些架站服務的產品，其中並沒有發現在地的品牌，認識速速建站後，我感覺到無比的親切，而我希望能夠在此領域投入我對程式的熱忱。</p>
+                <p>學習程式的過程中，發現許多不同的程式語言，尤其在網頁開發這個技術隨時不斷改變的領域裡，需要反覆的思考與學習，我是一個喜歡挑戰、做各種嘗試的人，而且可以透過不同的框架或不同的函式庫來實現相同的功能，這是一個沒有標準答案的世界，這一點也讓我為之著迷。</p>
+                <p>至於，為何挑選這間公司？首先，速速建站所處的地點非常優越，同時，速速建站的團隊夥伴擁有優秀的設計能力和開發技術，我相信參與團隊工作絕對會有超越我想像的收穫，不論是技術還是設計方面，抑或是融入職場環境，對我來說都有莫大的幫助，當然最重要的是能夠訓練獨立解決問題的能力。再者，學習的過程接觸過一些架站服務的產品，其中並沒有發現在地的品牌，認識速速建站後，我感覺到無比的親切，而我希望能夠在此領域中投入我對程式的熱忱。</p>
                 <li class="light"><b>為什麼公司該錄取你？</b></li>
-                <h4>首先，我具備公司要求的相應<tag class="light">程式能力</tag>。</h4>
-                <p>我希望能夠擔任公司的實習生，根據公司提供的徵才條件，<tag class="light">我有足夠的信心能夠勝任此一職務</tag>。往後，若獲得公司賞識加以培訓，或許就能滿足前端工程師的要求，並在這領域發揮所長。</p>
-                <h4>其次，我擁有<tag class="light">堅毅的學習精神</tag>與<tag class="light">充沛的熱忱</tag>。</h4>
-                <p>跨界超越競賽是一個沒有獎金的比賽，而且賽程歷時超過6個月，但是它不僅僅是一個比賽，透過<tag class="light">講座、工作坊</tag>讓參與賽事的成員們能夠加強作品的設計理念，還有業師對每個團隊進行指導，我們<tag class="light">兼顧學校課業、捨棄假日</tag>，<tag class="light">積極參與mentor課程</tag>，目的就是希望能夠提高自己的競爭力，做一些能夠回饋社會的事。</p>
-                <h4>最後，我能提供<tag class="light">UX的想法和建議</tag>，同時我也可以<tag class="light">改善部分服務項目</tag>。</h4>
-                <p>我能夠站在使用者的角度，在UX這方面分享一些想法。例如：使用者在購買新網址的時候，如果輸入熱門的關鍵字(yahoo、google、instagram...)，此時，使用者只會得到<tag class="light">"無法註冊"</tag>的訊息，卻沒有提供其他建議網址，再經過多次嘗試後，依然沒有結果就會<tag class="light">影響到使用者的購買動機</tag>。</p>
-                <p>我也可以協助經營Blog或FB粉專。新創團隊背後都有一個精彩的故事，可以在Blog<tag class="light">分享創業歷程</tag>或是<tag class="light">提供設計優美的網站</tag>供客戶參考，而且使用高畫質的教學影片能夠提高客戶的滿意度。</p>
+                <h4>首先，我具備公司能力要求的相應<span class="light">程式能力</span>。</h4>
+                <p>我希望能夠擔任公司的實習生，根據公司提供的徵才條件，
+                    <span class="light">我有足夠的信心能夠勝任此一職務</span>。往後，若獲得公司賞識加以培訓，或許就能滿足前端工程師的要求，並在這領域發揮所長。</p>
+                <h4>其次，我擁有<span class="light">堅毅的學習精神</span>與<span class="light">充沛的熱忱</span>。</h4>
+                <p>我曾參加跨界超越競賽，這是一個沒有獎金的比賽，而且賽程歷時超過6個月，但是它不僅僅是一個比賽，透過
+                    <span class="light">講座、工作坊</span>讓參與賽事的成員們能夠加強作品的設計理念，還有業師對每個團隊進行指導，我們
+                    <span class="light">兼顧學校課業、捨棄假日</span>，
+                    <span class="light">積極參與mentor課程</span>，目的就是希望能夠提高自己的競爭力，做一些能夠回饋社會的事。</p>
+                <h4>最後，我能提供<span class="light">UX的想法和建議</span>，同時我也可以<span class="light">改善部分服務項目</span>。</h4>
+                <p>我能夠站在使用者的角度，在UX這方面分享一些想法。例如：使用者在購買新網址的時候，如果輸入熱門的關鍵字(yahoo、google、instagram...)，此時，使用者只會得到
+                    <span class="light">「無法註冊」</span>的訊息，卻沒有提供其他建議網址，再經過多次嘗試後，依然沒有結果就會
+                    <span class="light">影響到使用者的購買動機</span>。</p>
+                <p>我也可以協助經營Blog或FB粉專。新創團隊背後都有一個精彩的故事，可以在Blog
+                    <span class="light">分享創業歷程</span>或是
+                    <e class="light">提供設計優美的網站</e>供客戶參考，而且使用高畫質的教學影片能夠提高客戶的滿意度。</p>
             </ul>
+            <hr>
+            <h2>勉勵自己的一句話</h2>
+            <p><span class="light" style="font-style: italic">你還這麼年輕，卻不敢去嘗試？</span>-創咖啡 Leo</p>
         </div>
     </div>
 </body>
 <footer class="container-fluid">
     <div class="footerdiv col-md-3 col-xs-3" style="font-weight: bold; text-align: right">聯絡方式</div>
-    <div class="footerdiv col-md-5 col-xs-5">
+    <div class="footerdiv col-md-5 col-xs-6">
         <ul style="list-style: none;">
             <li>
                 <a href="https://www.facebook.com/profile.php?id=100000207520803"><img src="pic/facebook.png" style="margin-right: 7px; width: 25px; height:25px;">姚乃文</a>
@@ -190,7 +217,7 @@
             <li>
                 <span class="glyphicon glyphicon-earphone"></span>0937-457-376
             </li>
-            <li>歡迎隨時與我聯繫</li>
+            <li>有任何問題歡迎隨時與我聯繫</li>
         </ul>
     </div>
 </footer>
