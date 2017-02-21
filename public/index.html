@@ -11,20 +11,13 @@
     <script src="https://unpkg.com/jquery@3.1.0/dist/jquery.min.js"></script>
     <script src="https://unpkg.com/remarkable@1.7.1/dist/remarkable.min.js"></script>
     <style type="text/css">
-    p {
-        font-size: 18px;
-        font-family: '微軟正黑體';
-    }
-    
-    div,
+    h1,
+    h2,
     h3,
-    li,
-    label {
+    p,
+    div,
+    li {
         font-family: '微軟正黑體';
-    }
-    
-    body {
-        background-color: #f2f2f2;
     }
     
     span {
@@ -32,30 +25,45 @@
         margin-right: 7px;
     }
     
+    p,
+    li {
+        /*font-size: 18px;*/
+        font-size: 1.25em;
+        /*20px*/
+    }
+    
+    h2 {
+        font-weight: bold;
+    }
+    
+    body {
+        background-color: #f2f2f2;
+    }
+    
     footer {
-        height: 50px;
-        background-color: #4cbdf7;
+        height: 200px;
+        /*background-color: #4cbdf7;*/
+        background-color: #adabac;
         margin-top: 20px;
     }
     
-    #avatar {
-        /*width: 240px;*/
-        /*height: 300px;*/
-        float: left;
+    #content {
+        padding: 0 20% 0 20%;
+    }
+    
+    .introduce {
+        padding: 20px 20px 20px 10%;
+        /*background-color: #4cbdf7;*/
+        background-image: url('pic/network2.jpg');
+        min-height: 220px;
+        /*min-width: 768px;*/
     }
     
     .introdiv {
         float: left;
-        font-family: '微軟正黑體';
         text-indent: 10px;
+        /*background-color: #4cbdf7;*/
         color: white;
-    }
-    
-    .introduce {
-        padding: 20px;
-        background-color: #4cbdf7;
-        min-height: 220px;
-        /*min-width: 768px;*/
     }
     
     .float-left {
@@ -63,10 +71,11 @@
     }
     
     .footerdiv {
-        text-align: center;
+        text-align: left;
         float: left;
-        height: 40px;
+        /*height: 40px;*/
         padding-top: 16px;
+        font-size: 1.5em;
     }
     </style>
 </head>
@@ -74,95 +83,110 @@
 <body>
     <div class="container">
         <div class="introduce container-fluid">
-            <div class="col-md-3 col-xs-5">
-                <img id='avatar' src="pic/avatar.jpg">
+            <div class="float-left col-md-3 col-xs-5">
+                <img class="" src="pic/avatar.jpg">
             </div>
-            <div title="introLable" class="introdiv col-md-5 col-xs-7">
+            <div class="introdiv col-md-5 col-xs-7">
                 <h1 style="text-indent: 10px;font-family: '微軟正黑體';color: white;">姚乃文
                 <span style="font-family: 'Time new roman'">Nai Wen Yao</span></h1>
                 <p><span class="glyphicon glyphicon-user"></span>男性</p>
                 <p><span class="glyphicon glyphicon-envelope"></span>tsub1994@gmail.com</p>
                 <p><span class="glyphicon glyphicon-earphone"></span>0937-457-376</p>
                 <br>
-                <h3>學歷</h3>
+                <h2>學歷</h2>
                 <p>2013-2017.06 銘傳大學 資管系</p>
             </div>
         </div>
         <div class="container-fluid" id="content" style="background-color: white;">
-            <h3>簡介</h3>
-            <p>我是銘傳資管大四的學生， 在code世界裡發現屬於自己的一片天， 嚮往能夠在充滿挑戰的環境下工作， 因此，選擇新創實習開始我的 hello world。</p>
-            <div>我認為想要確認自己是否適合新創公司，最好的方式就是去新創公司實習。</div>
+            <h2>簡介</h2>
+            <p class="light">我認為：「想要確認自己是否適合新創公司，最好的方式就是去新創公司實習。」</p>
+            <p>
+                我目前就讀銘傳資管四年級，自從進入程式設計這個領域後，我在code世界裡發現屬於自己的一片天。我嚮往能夠在<b>充滿挑戰的環境</b>下工作，因此，希望透過新創實習開始我的 hello world。
+            </p>
             <hr>
-            <h3>程式能力</h3>
+            <h2>程式能力</h2>
             <div class="float-left col-md-4 col-xs-4">
-                <label>入門</label>
+                <h3>入門</h3>
                 <ul>
-                    <li>React.js</li>
-                    <li>Restful</li>
+                    <li class="light">React.js</li>
+                    <li class="light">Restful</li>
                     <li>Angular.js</li>
                     <li>Bootstrap</li>
                     <li>Mocha</li>
                 </ul>
             </div>
             <div class="float-left col-md-6 col-xs-6">
-                <label>上手</label>
+                <h3>上手</h3>
                 <ul>
-                    <li>Javascript es6</li>
-                    <li>html</li>
-                    <li>css</li>
-                    <li>Webpack</li>
-                    <li>Git</li>
+                    <li class="light">Javascript es6</li>
+                    <li class="light">html</li>
+                    <li class="light">css</li>
+                    <li class="light">Webpack</li>
+                    <li class="light">Git</li>
                     <li>jQuery</li>
-                    <li>Node.js</li>
-                    <li>MongoDB</li>
+                    <li class="light">Node.js</li>
+                    <li class="light">MongoDB</li>
                     <li>SQLite</li>
                     <li>json</li>
                 </ul>
             </div>
             <br style="clear: both;">
             <hr>
-            <h3>比賽經驗</h3>
-            <label>2015</label>
+            <h2>參賽經驗</h2>
+            <h3>2015</h3>
             <ul>
                 <li>HackNTU 台大黑客松</li>
                 <li>TRANS-ACTION 跨界超越第2屆(決賽 top 20)</li>
             </ul>
-            <label>2016</label>
+            <h3>2016</h3>
             <ul>
                 <li>Smart City Hackathon 智慧城市黑客松</li>
                 <li>第21屆全國大專校院資訊應用服務創新競賽(決賽)</li>
                 <li>銘傳資管系專研(優等)</li>
             </ul>
-            <div>參加比賽是認識自己的一種方式，見識過別人的強大，才會了解到自己的不足，透過比賽不斷磨練自我，回想起最初參賽的東西，不禁感覺到羞愧。</div>
+            <p>參加比賽是一種認識自己的方式，見識過別人的強大，才會了解到自己的不足，透過比賽不斷磨練自我，回想起最初參賽的東西，不禁感覺到羞愧。</p>
             <hr>
-            <h3>作品</h3>
+            <h2>成果與作品</h2>
             <div>
-                <h4>販團<a href="https://github.com/zizyzhang/Onigiri">(GitHub)</a></li>
-                <p>團隊開發，希望藉由O2O的模式來推動校園團購風潮，是一個校園團購Web App，團隊採用Pair Programming模式，我一開始主要參與後端開發，之後轉為前端。較為可惜的是販團目前沒有維護。  
+                <h3>販團<a href="https://github.com/zizyzhang/Onigiri">(GitHub)</a></h3>
+                <p>團隊開發，希望藉由O2O的模式來推動校園團購風潮，是一個校園團購Web App，團隊採用Pair Programming模式，我一開始主要參與後端開發，之後轉為前端。較為可惜的是販團目前沒有維護。
                 </p>
-                <li>前端: Javascript es6、Webpack、Framework7、Vue.js、Babel</li>
-                <li>後端: Node.js、MongoDB、Mocha、Twilio</li>
+                <p>前端: Javascript es6、Webpack、Framework7、Vue.js、Babel</p>
+                <p>後端: Node.js、MongoDB、Mocha、Twilio</p>
             </div>
             <hr>
-            <h3>問題補充</h3>
+            <h2>補充問題</h2>
             <ul>
-            	<li>為什麼是這個產業？</li>
-            	<div>在學習程式的路上，我接觸到網頁開發這個領域，隨時都在改變的技術，使用不同框架、函式庫都能達成相同目的，需要不斷思考與學習，讓我為之著迷。</div>
-            	<li>為什麼是這間公司？</li>
-            	<div>首先，公司的地點非常棒。再者，學習的過程接觸過一些架站服務的產品，其中並沒有發現在地品牌，認識速速建站後，我感覺到無比的親切。</div>
-            	<li>為什麼公司該錄取你？</li>
-            	<div>我希望擔任公司的實習生，但是我具備著媲美前端工程師的基本要求，只需要加以培養，便能夠滿足前端工程師的條件，再加上我對後端也有經驗，要晉升成為全端工程師，也是指日可待。</div>
-            	<div>我能夠站在使用者的角度，在UX這方面分享一些想法。像是，購買新網址的時候，輸入熱門關鍵字，使用者只會知道"無法註冊"，卻沒有提供其他建議，嘗試多次失敗後會打擊使用者的購買動機。</div>
-            	<div>我可以協助經營Blog或FB粉專。新創團隊背後都有一個精彩的故事，可以在Blog分享創業歷程或是提供優秀的網站設計讓客戶參考，使用高畫質的教學影片能夠提高客戶的滿意度。 </div>
-            	<li>為什麼你不會工作兩個禮拜就離開？</li>
-            	<div>跨界超越競賽，一個沒有獎金的比賽，而且歷時超過6個月，為了讓自己學習成長，團隊堅持到最後一刻。</div>
+                <li>為什麼是這個產業？</li>
+                <p>在學習程式的路上，我接觸到網頁開發這個領域，隨時都在改變的技術，使用不同框架、函式庫都能達成相同目的，需要不斷思考與學習，讓我為之著迷。</p>
+                <li>為什麼是這間公司？</li>
+                <p>首先，公司的地點非常棒。再者，學習的過程接觸過一些架站服務的產品，其中並沒有發現在地品牌，認識速速建站後，我感覺到無比的親切。</p>
+                <li>為什麼公司該錄取你？</li>
+                <p>我希望擔任公司的實習生，但是我具備著媲美前端工程師的基本要求，只需要加以培養，便能夠滿足前端工程師的條件，再加上我對後端也有經驗，要晉升成為全端工程師，也是指日可待。</p>
+                <p>我能夠站在使用者的角度，在UX這方面分享一些想法。像是，購買新網址的時候，輸入熱門關鍵字，使用者只會知道"無法註冊"，卻沒有提供其他建議，嘗試多次失敗後會打擊使用者的購買動機。</p>
+                <p>我可以協助經營Blog或FB粉專。新創團隊背後都有一個精彩的故事，可以在Blog分享創業歷程或是提供優秀的網站設計讓客戶參考，使用高畫質的教學影片能夠提高客戶的滿意度。 </p>
+                <li>為什麼你不會工作兩個禮拜就離開？</li>
+                <p>跨界超越競賽，一個沒有獎金的比賽，而且歷時超過6個月，為了讓自己學習成長，團隊堅持到最後一刻。</p>
             </ul>
         </div>
     </div>
 </body>
-<footer class="">
-	<div class="footerdiv col-md-4 col-xs-4"><a href="https://www.facebook.com/profile.php?id=100000207520803"><img src="pic/facebook.png" style="margin-right: 7px;">姚乃文</a></div>
-	<div class="footerdiv col-md-4 col-xs-4"><span class="glyphicon glyphicon-envelope"></span>tsub1994@gmail.com</div>
-    <div class="footerdiv col-md-4 col-xs-4"><span class="glyphicon glyphicon-earphone"></span>0937-457-376</div>
+<footer class="container-fluid">
+    <div class="footerdiv col-md-3 col-xs-3" style="font-weight: bold; text-align: right">聯絡方式</div>
+    <div class="footerdiv col-md-5 col-xs-5">
+        <ul style="list-style: none;">
+            <li>
+                <a href="https://www.facebook.com/profile.php?id=100000207520803"><img src="pic/facebook.png" style="margin-right: 7px; width: 25px; height:25px;">姚乃文</a>
+            </li>
+            <li>
+                <span class="glyphicon glyphicon-envelope"></span>tsub1994@gmail.com
+            </li>
+            <li>
+                <span class="glyphicon glyphicon-earphone"></span>0937-457-376
+            </li>
+            <li>歡迎隨時與我聯繫</li>
+        </ul>
+    </div>
 </footer>
+
 </html>
