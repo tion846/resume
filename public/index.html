@@ -39,13 +39,9 @@
     }
     
     #avatar {
-        width: 180px;
-        height: 180px;
+        width: 240px;
+        height: 300px;
         float: left;
-    }
-    
-    #introLable {
-        margin-right: 20px;
     }
     
     .introdiv {
@@ -62,11 +58,15 @@
         /*min-width: 768px;*/
     }
     
+    .float-left {
+        float: left;
+    }
+    
     .footerdiv {
         text-align: center;
         float: left;
         height: 40px;
-        /*width: 240px;*/
+        padding-top: 16px;
     }
     </style>
 </head>
@@ -74,14 +74,15 @@
 <body>
     <div class="container">
         <div class="introduce container-fluid">
-            <img id='avatar' src="pic/avatar.jpg">
-            <h1 style="text-indent: 10px;font-family: '微軟正黑體';color: white;">姚乃文</h1>
-            <div id="introLable" class="introdiv">
+            <img class="col-md-4 col-xs-4" id='avatar' src="pic/avatar.jpg">
+            <div title="introLable" class="introdiv col-md-4 col-xs-8">
+                <h1 style="text-indent: 10px;font-family: '微軟正黑體';color: white;">姚乃文
+                <span style="font-family: 'Time new roman'">Nai Wen Yao</span></h1>
                 <p><span class="glyphicon glyphicon-user"></span>男性</p>
                 <p><span class="glyphicon glyphicon-envelope"></span>tsub1994@gmail.com</p>
                 <p><span class="glyphicon glyphicon-earphone"></span>0937-457-376</p>
             </div>
-            <div id="education" class="introdiv">
+            <div id="education" class="introdiv col-md-4 col-xs-8">
                 <h3>學歷</h3>
                 <p>2013-2017.06 銘傳大學 資管系</p>
             </div>
@@ -91,28 +92,33 @@
             <p>我是銘傳資管大四的學生， 在code世界裡發現屬於自己的一片天， 嚮往能夠在充滿挑戰的環境下工作， 因此，選擇新創實習開始我的 hello world。</p>
             <div>我認為想要確認自己是否適合新創公司，最好的方式就是去新創公司實習。</div>
             <hr>
-            <h3>技能專長</h3>
-            <label>入門</label>
-            <ul>
-                <li>React.js</li>
-                <li>Restful</li>
-                <li>Angular.js</li>
-                <li>Bootstrap</li>
-                <li>Mocha</li>
-            </ul>
-            <label>上手</label>
-            <ul>
-                <li>Javascript es6</li>
-                <li>html</li>
-                <li>css</li>
-                <li>Webpack</li>
-                <li>Git</li>
-                <li>jQuery</li>
-                <li>Node.js</li>
-                <li>MongoDB</li>
-                <li>SQLite</li>
-                <li>json</li>
-            </ul>
+            <h3>程式能力</h3>
+            <div class="float-left col-md-4 col-xs-4">
+                <label>入門</label>
+                <ul>
+                    <li>React.js</li>
+                    <li>Restful</li>
+                    <li>Angular.js</li>
+                    <li>Bootstrap</li>
+                    <li>Mocha</li>
+                </ul>
+            </div>
+            <div class="float-left col-md-6 col-xs-6">
+                <label>上手</label>
+                <ul>
+                    <li>Javascript es6</li>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>Webpack</li>
+                    <li>Git</li>
+                    <li>jQuery</li>
+                    <li>Node.js</li>
+                    <li>MongoDB</li>
+                    <li>SQLite</li>
+                    <li>json</li>
+                </ul>
+            </div>
+            <br style="clear: both;">
             <hr>
             <h3>比賽經驗</h3>
             <label>2015</label>
@@ -154,7 +160,7 @@
     </div>
 </body>
 <footer class="">
-	<div class="footerdiv col-md-4 col-xs-4"><img src="pic/facebook.png" style="margin-right: 7px;">姚乃文</div>
+	<div class="footerdiv col-md-4 col-xs-4"><a href="https://www.facebook.com/profile.php?id=100000207520803"><img src="pic/facebook.png" style="margin-right: 7px;">姚乃文</a></div>
 	<div class="footerdiv col-md-4 col-xs-4"><span class="glyphicon glyphicon-envelope"></span>tsub1994@gmail.com</div>
     <div class="footerdiv col-md-4 col-xs-4"><span class="glyphicon glyphicon-earphone"></span>0937-457-376</div>
 </footer>
